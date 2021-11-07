@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>String Template</title>
+  </head>
+  <body>
+    <script>
+      const name = "ade saputra";
+      const template = `name : ${name} `;
+
+      console.info(template);
+
+      let nilai = 60;
+      let template2 = `name : ${name}, lulus : ${nilai > 70} `;
+
+      console.info(template2);
+
+      /* Multiline String
+        string template juga bisa digunakan untuk membuat string multi line
+        kita cukup tambahkan enter ditextnya */
+      const multiline = `Nama Saya Ade,
+        sekarang kerja,
+        sering juga traveling,
+        kalo lagi males, tidur `;
+
+      document.writeln("<pre>");
+      document.writeln(multiline);
+      document.writeln("</pre>");
+    </script>
+  </body>
+</html>
+
+<!-- String Template
+    javascript memiliki fitur yang bernama string template,dimana kita bisa mensubtitusi
+    data dari luar string kedalam string, seperti mengambil data variable, atau bahkan melakukan operasi matematika
+Untuk menggunakan string template, cara pembuatan stringnya 
+harus menggunakan `(backtick)
+bukan '(petik) atau "(petik dua) -->

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Operator Logika</title>
+  </head>
+  <body>
+    <script>
+      const nilaiUjian = 90;
+      const nialiAbsensi = 90;
+
+      const lulusUjian = nilaiUjian > 75;
+      document.writeln(lulusUjian);
+      const lulusAbsensi = nialiAbsensi > 75;
+      document.writeln(lulusAbsensi);
+
+      const lulus = lulusUjian && lulusAbsensi;
+      document.writeln(lulus);
+    </script>
+  </body>
+</html>
+
+<!-- operator LOgika &&
+
+Niali 1                Operator                 Niali 2             Hasil 
+   true                  &&                     true                true
+   true                  &&                     false               false
+   false                 &&                     true                false
+   false                 &&                     false              false
+ -->
+
+<!-- operator LOgika ||
+
+Niali 1                Operator                 Niali 2             Hasil 
+   true                  ||                     true                true
+   true                  ||                     false               true
+   false                 ||                     true                true
+   false                 ||                    false              false
+ -->
+
+<!-- operator LOgika Unary atau kebalikanya
+
+ Operator            Niali 2             Hasil 
+   !                  true                true
+   !                 false                true
+ -->
